@@ -1,12 +1,45 @@
+.background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+    width: 100%;
+    position: absolute; 
+    z-index: -1; 
+  }
 
-/* 
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.todo-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .todo-list-box {
+    padding: 20px;
+    border: 2px solid #ccc;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; 
+    width: 60%;
+   
+  }
 
-    You can write your own styles here...
+  .todo-list-input {
+    margin-bottom: 20px; 
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  }
 
-*/
+  .input-inside{
+    width: 100%;
+  }
