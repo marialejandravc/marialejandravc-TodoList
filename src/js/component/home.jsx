@@ -1,26 +1,36 @@
 import React from "react";
+import TodoList from "./Todolist";
+
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import backgroundImage from "../../img/pexels-george-milton-7034449.jpg"; 
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+	  <div className="container-fluid text-center">
+		{ }
+		<div
+        className="background-image"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      ></div>
+  
+		<div className="content">
+		  <p className="mt-4">
+		  ¡Descubre una nueva forma de gestionar tus actividades diarias! Explora nuestra herramienta para mantener el control de tu día a día de manera eficiente.
+		  </p>
+		  <p className="mt-4">
+			Hecho por{""}
+			<a href="https://github.com/marialejandravc"> marialejandravc </a>, con
+			💚!
+		  </p>
+  
 		</div>
+		{ }
+		<TodoList />
+	  </div>
+  
 	);
-};
-
-export default Home;
+  };
+  
+  export default Home;
